@@ -4,10 +4,10 @@ using namespace std;
 
 // Test colors first:
 void printColor(string str) {
-  system("Color 1A");
+  //   system("bash");
   cout << str;
 }
 
 int main() {
-  printColor("TEST\n");
+  printColor("\033[1;31mTEST\n");
 }
