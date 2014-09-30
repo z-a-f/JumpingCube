@@ -4,8 +4,8 @@
 using namespace std;
 
 
-#define BOARD_X	10
-#define BOARD_Y	4
+#define BOARD_X	6
+#define BOARD_Y	6
 
 #define RED	"\033[1;31m"
 #define GREEN	"\033[0;32m"
