@@ -178,12 +178,12 @@ void play() {
   while (!done) {
     drawBoard(board.nums, board.player);
     printColor("Please enter the coordinates (-1 -1 for exit): ", 
-	       (turn == 1) ? RED : BLUE);
+	       (turn == 1) ? P1 : P2);
     std::cin >> col >> row;
     while (row < -1 || col < -1 || row >= BOARD_Y || col >= BOARD_X) {
       drawBoard(board.nums, board.player);
       printColor("Try again (-1 -1 for exit): ", 
-	       (turn == 1) ? RED : BLUE);
+	       (turn == 1) ? P1 : P2);
       std::cin >> col >> row;
     }
     if (row == -1 || col == -1) return;
@@ -194,9 +194,9 @@ void play() {
 
   std::cout << "CONGRATULATIONS ";
   if (board.player[0][0] == 1)
-    printColor("RED ", RED);
+    printColor("FIRST ", P1);
   else if (board.player[0][0] == -1)
-    printColor("BLUE ", BLUE);
+    printColor("SECOND ", P2);
   else
     printColor("???WTF??? ", CYAN);
   std::cout << "PLAYER!\n";
