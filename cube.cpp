@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 #define BOARD_X	5
 #define BOARD_Y	5
 
