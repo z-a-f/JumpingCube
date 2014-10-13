@@ -168,7 +168,6 @@ void init() {
 }
 
 
-
 void play() {
   int row, col;
   int turn = 1;
