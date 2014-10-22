@@ -109,11 +109,11 @@ int neighbors(int x, int y) {
   // 1. Corners
   // 2. Edges
   // 3. The rest
-  if ( (x == 0 || x == BOARD_X-1) && (y == 0 || y == BOARD_Y-1) ) {
+  if ( (x == 0 || x == BOARD_X-1) && (y == 0 || y == BOARD_Y-1) ) { // 1
     return 2;
-  } else if ( (x == 0 || x == BOARD_X-1) || (y == 0 || y == BOARD_Y-1) ) {
+  } else if ( (x == 0 || x == BOARD_X-1) || (y == 0 || y == BOARD_Y-1) ) { // 2
     return 3;
-  } else {
+  } else { // 3
     return 4;
   }
 } 
